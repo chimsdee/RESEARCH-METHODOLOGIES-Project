@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, #008080);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    border-radius: 50%;
+    border: 1px solid #1f242d;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+
+/* Blog Section Styles */
+.blog-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.blog-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-section .card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-section .card-body {
+    padding: 20px;
+}
+
+.blog-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-section .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.blog-section .btn-info {
+    background-color: #008080;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.blog-section .btn-info:hover {
+    background-color: #006666;
+}
+
+body {
+    /* margin-top: 40px; */
+    font-family: "DM Sans", sans-serif;
+    /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+}
+
+body::before {
+    content: '';
+    /* color: red; */
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+/* .box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 12px;
+} */
+
+@media (min-width: 576px) {
+    body::before {
+        content: '';
+    }
+}
+
+@media (min-width: 768px) {
+    body::before {
+        content: '';
+    }
+}
+
+@media (min-width: 992px) {
+    body::before {
+        content: '';
+    }
+}
+
+@media (min-width: 1200px) {
+    body::before {
+        content: '';
+    }
+}
+
+@media (min-width: 1400px) {
+    body::before {
+        content: '';
+    }
+}
+
+.ps-6 {
+    padding-left: 3.5rem !important;
+}
+
+.ps-7 {
+    padding-left: 4rem !important;
+}
+
+.ps-8 {
+    padding-left: 4.5rem !important;
+}
+
+.ps-9 {
+    padding-left: 5rem !important;
+}
+
+.ps-10 {
+    padding-left: 5.5rem !important;
+}
+
+.pe-6 {
+    padding-right: 3.5rem !important;
+}
+
+.pe-7 {
+    padding-right: 4rem !important;
+}
+
+.pe-8 {
+    padding-right: 4.5rem !important;
+}
+
+.pe-9 {
+    padding-right: 5rem !important;
+}
+
+.pe-10 {
+    padding-right: 5.5rem !important;
+}
+
+.ms-6 {
+    margin-left: 3.5rem !important;
+}
+
+.ms-7 {
+    margin-left: 4rem !important;
+}
+
+.ms-8 {
+    margin-left: 4.5rem !important;
+}
+
+.ms-9 {
+    margin-left: 5rem !important;
+}
+
+.ms-10 {
+    margin-left: 5.5rem !important;
+}
+
+.me-6 {
+    margin-right: 3.5rem !important;
+}
+
+.me-7 {
+    margin-right: 4rem !important;
+}
+
+.me-8 {
+    margin-right: 4.5rem !important;
+}
+
+.me-9 {
+    margin-right: 5rem !important;
+}
+
+.me-10 {
+    margin-right: 5.5rem !important;
+}
+
+.wrap-input-17 * {
+    box-sizing: border-box;
+
+}
+
+.wrap-input-17 .search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.wrap-input-17 .input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color:
+        #fff;
+    padding-right: 40px;
+    color:
+        #fff;
+}
+
+.wrap-input-17 .input-search::placeholder {
+    color:
+        rgba(255, 255, 255, .5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.wrap-input-17 .btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:
+        #ffffff;
+    background-color:
+        transparent;
+    pointer-events: painted;
+}
+
+.wrap-input-17 .btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color:
+        transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.wrap-input-17 .input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color:
+        transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+body {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.wrap-check-14 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+.wrap-check-14 *,
+.wrap-check-14 ::after,
+.wrap-check-14 ::before {
+    box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.wrap-check-14 .switch {
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    display: inline-block;
+}
+
+/* The slider */
+.wrap-check-14 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:
+        #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.wrap-check-14 .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon, 1.4em);
+    width: var(--size-of-icon, 1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset, 0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    ;
+    transition: .4s;
+}
+
+.wrap-check-14 input:checked+.slider {
+    background-color:
+        #303136;
+}
+
+.wrap-check-14 input:checked+.slider:before {
+    left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+    background:
+        #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/* Light mode (default) */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Set your desired width */
+    height: 900px;
+    /* Set your desired height */
+}
+
+/* The image itself */
+.image-container .image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Green overlay on the image */
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 128, 0, 0.5); */
+    /* Green with 50% transparency */
+    z-index: 1;
+}
+
+/* Make sure the navbar is on top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* This makes the navbar always stay on top */
+}
+
+/* The image behind the navbar */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* Make the image take up the full screen height */
+    object-fit: cover;
+    z-index: -1;
+    /* Puts the image behind the navbar */
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #008080;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+.info::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #008080;
+    color: #008080;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.hhh a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 50px;
+    background: #ffffff;
+    ;
+    transition: width .7s;
+}
+
+.hhh a:hover::after {
+    width: 100%;
+    transition: width .7s;
+}
+
+.counter-box {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.counter-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
